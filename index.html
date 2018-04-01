@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<title>Garima Lunawat</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="main.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+.w3-third img{margin-bottom: -6px; opacity: 0.8; cursor: pointer}
+.w3-third img:hover{opacity: 1}
+</style>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-text-grey w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
+  <h3 class="w3-padding-64 w3-center"><b>A<br>Variety<br>of Art</b></h3>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
+  <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">PORTFOLIO</a> 
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT ME</a>  
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">RESUME</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+  <span class="w3-left w3-padding">A Variety of Art</span>
+  <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Push down content on small screens --> 
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Photo grid -->
+  <div class="w3-row">
+    <div class="w3-third">
+      <img src="art/reminiscence.png" style="width:100%" onclick="onClick(this)" alt="<h3>Reminiscence</h3> Acrylic on Canvas. 2014.">
+      <img src="art/pollutionVersusNature.png" style="width:100%" onclick="onClick(this)" alt="<h3>Pollution versus Nature</h3> Graphite. 2014.">
+      <img src="art/hope.png" style="width:100%" onclick="onClick(this)" alt="<h3>Hope</h3> Pastel. 2012.">
+      <img src="art/reflectionOfMe.jpg" style="width:100%" onclick="onClick(this)" alt="<h3>Reflection of Me</h3> Acrylic on Canvas. 2014.">
+    </div>
+
+    <div class="w3-third">
+        <img src="art/celestialSpirits.png" style="width:100%" onclick="onClick(this)" alt="<h3>Celestial Spirits</h3> Graphite. 2011.">
+        <img src="art/childhood.jpg" style="width:100%" onclick="onClick(this)" alt="<h3>Childhood</h3> Colored Pencil. 2012.">
+        <img src="art/peacock.png" style="width:100%" onclick="onClick(this)" alt="<h3>Peacock</h3> Ink. 2011.">
+        <img src="art/onTheWayToThePanghat.png" style="width:100%" onclick="onClick(this)" alt="<h3>On the Way to the Panghat</h3> Acrylic. 2009.">
+    </div>
+    
+    <div class="w3-third">
+        <img src="art/ganeshJi.png" style="width:100%" onclick="onClick(this)" alt="<h3>Ganesh Ji</h3> Acrylic. 2009.">
+        <img src="art/hands.jpg" style="width:100%" onclick="onClick(this)" alt="<h3>Hands</h3> Scratchboard (left), Watercolor (center), Ink (right). 2013.">
+        <img src="art/hacker.jpg" style="width:100%" onclick="onClick(this)" alt="<h3>Hacker</h3> Watercolor and Ink. 2017.">
+        <img src="art/butterfly.jpg" style="width:100%" onclick="onClick(this)" alt="<h3>Butterfly</h3> Watercolor. 2017.">
+        
+    </div>
+  </div>
+  
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- About section -->
+  <div class="w3-container w3-dark-grey w3-center w3-text-light-grey w3-padding-32" id="about">
+    <h4><b>About Me</b></h4>
+    <img src="me.jpg" alt="Me" class="w3-image w3-padding-32" width="650" height="600">
+    <div class="w3-content w3-justify" style="max-width:600px">
+      <h3>Garima Lunawat</h3>
+      <p>Hi! I'm currently pursuing a Computer Science degree and will be going into Software Engineerings full time. You can see my resume for more information on this!
+          On the side I do art for fun. I have tried graphite, ink, scratchboard, pastel, painting and some other mediums. My favorite medium is currently paint, specificlly 
+          acrylic. This is just a collection of some of the pieces that I have put together over the years, and will contine to be updated as I put together more pieces! 
+          
+          <h5>Thank you for visiting!</h5>
+      </p>
+      
+      <hr class="w3-opacity">
+        
+      </div>
+    </div>
+
+  <!-- Resume section -->
+  <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
+    <div class="w3-content" style="max-width:600px">
+      <h4 class="w3-center"><b>Resume</b></h4>
+      <object width="600" height="820" data="garimaLunawat.pdf"></object>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="w3-black w3-center w3-padding-24">Garima Lunawat 2018</div>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+</script>
+
+
+</body>
+</html>
